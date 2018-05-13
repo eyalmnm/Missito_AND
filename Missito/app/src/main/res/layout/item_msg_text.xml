@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/message_right_margin"
+    android:gravity="right"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin"
+        android:minHeight="44dp"
+        android:background="@drawable/text_message_bg_color_dodger_blue">
+
+        <TextView
+            android:id="@+id/message_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="12dp"
+            android:maxWidth="180dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:text="Message" />
+
+        <TextView
+            android:id="@+id/date_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/message_txt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/message_txt"
+            android:textColor="@color/cpb_white"
+            android:textSize="10sp"
+            tools:text="Test text" />
+
+        <ImageView
+            android:id="@+id/img_seen"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignTop="@+id/date_txt"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/date_txt"
+            android:tint="@android:color/white" />
+
+        <Space
+            android:id="@+id/status_space"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_seen"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

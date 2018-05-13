@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <FrameLayout
+        android:id="@+id/profileAvatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/bubble"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="30dp" />
+
+        <TextView
+            android:id="@+id/initials_txt"
+            fontPath="fonts/vagrundschriftdot-regular.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="@color/black10"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="AD" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin"
+        android:layout_toRightOf="@+id/profileAvatar"
+        android:background="@drawable/text_message_bg_athens_gray"
+        android:minHeight="44dp">
+
+        <TextView
+            android:id="@+id/message_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="12dp"
+            android:maxWidth="180dp"
+            android:textColor="@color/tundora"
+            android:textSize="16sp"
+            tools:text="Message" />
+
+        <TextView
+            android:id="@+id/date_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/message_txt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/message_txt"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            tools:text="Test text" />
+
+    </RelativeLayout>
+</RelativeLayout>

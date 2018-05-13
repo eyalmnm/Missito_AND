@@ -1,0 +1,12 @@
+.gradle
+local.properties
+.idea
+.DS_Store
+build
+captures
+.gitignore
+*.iml
+gradle/
+gradlew*
+google-services.json
+gradle.properties

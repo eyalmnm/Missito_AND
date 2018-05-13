@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/curiousBlue</color>
+    <color name="colorPrimaryDark">@color/darkGrey</color>
+    <color name="colorAccent">@color/orangeRed</color>
+
+    <color name="black">#000000</color>
+    <color name="black10">#22000000</color>
+
+    <color name="cyan">#63afc7</color>
+    <color name="dodgerBlue">#35A8FC</color>
+    <color name="gray">#828282</color>
+    <color name="gallery">#ebebeb</color>
+    <color name="halfTransparent">#80000000</color>
+    <color name="anakiwa">#B3DCFF</color>
+    <color name="cinnabar">#E74938</color>
+    <color name="green">#05E105</color>
+    <color name="curiousBlue">#3B8EDE</color>
+    <color name="athensGray">#efeff4</color>
+    <color name="tundora">#424242</color>
+    <color name="manatee">#8E8E93</color>
+    <color name="malibu">#78B9FF</color>
+    <color name="orangeRed">#ff5700</color>
+    <color name="darkGrey">#555555</color>
+    <color name="lightGrey">#AAAAAA</color>
+    <color name="lightCyan">#65BBDA</color>
+    <color name="bonJour">#F5F2F5</color>
+    <color name="mercury">#E9E9E9</color>
+    <color name="japaneseLaurel">#008000</color>
+    <color name="crimson">#E01515</color>
+
+    <color name="screaminGreen">#66ff66</color>
+    <color name="yellow">#ffff00</color>
+    <color name="color_divider">#c8c7cc</color>
+
+</resources>

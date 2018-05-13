@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/incoming_message_avatar" />
+
+    <ch.mitto.missito.ui.tabs.chat.view.RoundedFrameLayout
+        android:id="@+id/bubble"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            map:liteMode="true" />
+
+        <FrameLayout
+            android:id="@+id/dots_menu"
+            android:layout_width="@dimen/dots_menu_layout_width"
+            android:layout_height="@dimen/dots_menu_layout_height"
+            android:layout_gravity="top|left">
+
+            <ImageView
+                android:layout_width="@dimen/dots_menu_icon"
+                android:layout_height="@dimen/dots_menu_icon"
+                android:layout_gravity="center"
+                android:background="@mipmap/dots_vert" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/athensGray">
+
+            <TextView
+                android:id="@+id/location_name"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/msg_body_horizontal_margin"
+                android:layout_marginRight="@dimen/msg_body_horizontal_margin"
+                android:layout_marginTop="@dimen/msg_body_vertical_margin"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/tundora"
+                android:textSize="16sp"
+                tools:text="Test" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/location_name"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="@dimen/msg_body_horizontal_margin"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/msg_time_label_size"
+                tools:text="Test text" />
+
+        </RelativeLayout>
+    </ch.mitto.missito.ui.tabs.chat.view.RoundedFrameLayout>
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_forward" />
+</LinearLayout>

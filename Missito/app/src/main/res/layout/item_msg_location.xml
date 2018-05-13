@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:gravity="right"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_forward" />
+
+    <ch.mitto.missito.ui.tabs.chat.view.RoundedFrameLayout
+        android:id="@+id/bubble"
+        android:layout_width="254dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            map:liteMode="true" />
+
+        <FrameLayout
+            android:id="@+id/dots_menu"
+            android:layout_width="@dimen/dots_menu_layout_width"
+            android:layout_height="@dimen/dots_menu_layout_height"
+            android:layout_gravity="top|right">
+
+            <ImageView
+                android:layout_width="@dimen/dots_menu_icon"
+                android:layout_height="@dimen/dots_menu_icon"
+                android:layout_gravity="center"
+                android:background="@mipmap/dots_vert" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/curiousBlue">
+
+            <TextView
+                android:id="@+id/location_name"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/msg_body_horizontal_margin"
+                android:layout_marginRight="@dimen/msg_body_horizontal_margin"
+                android:layout_marginTop="@dimen/msg_body_vertical_margin"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:text="Test" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_name"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/status_img_layout"
+                android:textColor="@color/cpb_white"
+                android:textSize="@dimen/msg_time_label_size"
+                tools:text="Test text" />
+
+            <FrameLayout
+                android:id="@+id/status_img_layout"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/date_txt"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp">
+
+                <ImageView
+                    android:id="@+id/img_seen"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:tint="@android:color/white" />
+
+                <Space
+                    android:id="@+id/status_space"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+    </ch.mitto.missito.ui.tabs.chat.view.RoundedFrameLayout>
+</LinearLayout>

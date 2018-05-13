@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ch.mitto.missito.ui.tabs.settings.SettingsFragment">
+
+    <RelativeLayout
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_icon="ion-locked"
+            android:id="@+id/privacy_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/privacy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/privacy_arrow"
+            android:layout_toStartOf="@+id/privacy_arrow"
+            android:layout_toRightOf="@+id/privacy_icon"
+            android:layout_toEndOf="@+id/privacy_icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/privacy_label"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"
+            tools:text="Privacy" />
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/privacy_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:iiv_color="@color/darkGrey"
+            app:iiv_icon="ion-chevron-right" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/build_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_icon="ion-cube"
+            android:id="@+id/build_settings_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/build_settings_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/build_settings_arrow"
+            android:layout_toStartOf="@+id/build_settings_arrow"
+            android:layout_toRightOf="@+id/build_settings_icon"
+            android:layout_toEndOf="@+id/build_settings_icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/build_info"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"
+            tools:text="Privacy" />
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/build_settings_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:iiv_color="@color/darkGrey"
+            app:iiv_icon="ion-chevron-right" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:text="@string/logout"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileAvatar"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_alignBottom="@+id/bubble"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    tools:ignore="MissingPrefix">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="16dp" />
+
+    <TextView
+        android:id="@+id/initials_txt"
+        fontPath="fonts/vagrundschriftdot-regular.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:shadowColor="@color/black10"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="8"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="AD" />
+</FrameLayout>

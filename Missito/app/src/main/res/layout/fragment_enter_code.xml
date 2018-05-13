@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/enterCode"
+        fontPath="fonts/sf-ui-display-light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/tundora"
+        android:textColorLink="@color/malibu"
+        android:textSize="15sp"
+        tools:text="Enter the verification code we have sent to +37369132456" />
+
+    <include layout="@layout/pin_input" />
+
+    <TextView
+        android:id="@+id/resendCode"
+        fontPath="fonts/sf-ui-display-light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/resend_code"
+        android:textColor="@color/malibu"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btnDidntGetCode"
+        fontPath="fonts/sf-ui-display-light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/i_didn_t_received"
+        android:textColor="@color/malibu"
+        android:textSize="15sp" />
+
+</LinearLayout>

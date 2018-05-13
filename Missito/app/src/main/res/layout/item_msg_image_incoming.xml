@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="ch.mitto.missito.ui.tabs.chat.ChatActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/incoming_message_avatar" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ch.mitto.missito.ui.tabs.chat.view.ChatRoundedImageView
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+            android:layout_marginTop="@dimen/chat_cell_top_margin"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:id="@+id/dots_menu"
+            android:layout_width="@dimen/dots_menu_layout_width"
+            android:layout_height="@dimen/dots_menu_layout_height"
+            android:layout_gravity="top|left">
+
+            <ImageView
+                android:layout_width="@dimen/dots_menu_icon"
+                android:layout_height="@dimen/dots_menu_icon"
+                android:layout_gravity="center"
+                android:background="@mipmap/dots_vert" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/date_label_bg_transparent"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <TextView
+                android:id="@+id/date_txt"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                tools:text="Test text" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_forward" />
+</LinearLayout>

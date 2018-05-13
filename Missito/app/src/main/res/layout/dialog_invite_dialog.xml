@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_message_bg_athens_gray"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/invite_your_friends"
+        android:textColor="@color/curiousBlue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/inviteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/submit_button_selector"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="@string/invite"
+        android:textAllCaps="true"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no_thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="No, thanks!"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+</LinearLayout>

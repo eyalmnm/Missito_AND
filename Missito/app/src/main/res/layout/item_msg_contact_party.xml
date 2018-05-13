@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin"
+        android:layout_toRightOf="@+id/profileAvatar"
+        android:background="@drawable/text_message_bg_athens_gray">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/contact_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="24dp"
+            app:riv_mutate_background="true" />
+
+        <FrameLayout
+            android:id="@+id/dots_menu"
+            android:layout_width="@dimen/dots_menu_layout_width"
+            android:layout_height="@dimen/dots_menu_layout_height"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/contact_info">
+
+            <ImageView
+                android:layout_width="@dimen/dots_menu_icon"
+                android:layout_height="@dimen/dots_menu_icon"
+                android:layout_gravity="center"
+                android:background="@mipmap/dots_vert" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/contact_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="157dp"
+                android:minWidth="100dp"
+                android:textColor="@color/tundora"
+                android:textSize="14sp"
+                tools:text="Pripa Marcu " />
+
+            <TextView
+                android:id="@+id/phones"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="157dp"
+                android:textColor="@color/tundora"
+                android:textSize="14sp"
+                tools:text="+37367360869" />
+
+            <TextView
+                android:id="@+id/emails"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="157dp"
+                android:textColor="@color/tundora"
+                android:textSize="14sp"
+                tools:text="user@redriverapps.net" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/msg_time_label_size"
+                tools:text="Test text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/incoming_message_avatar" />
+</RelativeLayout>

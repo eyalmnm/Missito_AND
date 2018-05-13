@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ch.mitto.missito.ui.tabs.chat.view.AudioPlayerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bubble"
+    android:layout_width="254dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/audio_msg_bg_color_dodger_blue"
+    android:padding="2dp">
+
+    <ImageButton
+        android:id="@+id/play_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_play"
+        app:backgroundTint="@android:color/white"
+        android:background="@drawable/rounded_play_btn"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/play_btn"
+        android:maxHeight="2dp"
+        android:maxWidth="2dp"
+        android:minHeight="2dp"
+        android:minWidth="2dp"
+        android:paddingRight="10dp"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:thumb="@drawable/slider_thumb" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginRight="9dp">
+
+        <TextView
+            android:id="@+id/date_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/img_seen"
+            android:textColor="@color/cpb_white"
+            android:textSize="10sp"
+            tools:text="99:99" />
+
+        <ImageView
+            android:id="@+id/img_seen"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/seekbar"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:tint="@android:color/white" />
+
+        <Space
+            android:id="@+id/status_space"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_txt"
+        fontPath="fonts/sf-ui-display-light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/play_btn"
+        android:lines="1"
+        android:paddingTop="1dp"
+        android:textColor="@android:color/white"
+        android:textSize="9sp"
+        tools:text="00:00" />
+
+</ch.mitto.missito.ui.tabs.chat.view.AudioPlayerView>

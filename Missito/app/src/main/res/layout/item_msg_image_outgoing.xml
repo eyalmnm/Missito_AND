@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/message_right_margin"
+    android:gravity="right"
+    tools:context="ch.mitto.missito.ui.tabs.chat.ChatActivity"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_forward" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ch.mitto.missito.ui.tabs.chat.view.ChatRoundedImageView
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+            android:layout_marginTop="@dimen/chat_cell_top_margin"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:id="@+id/dots_menu"
+            android:layout_width="@dimen/dots_menu_layout_width"
+            android:layout_height="@dimen/dots_menu_layout_height"
+            android:layout_gravity="top|right">
+
+            <ImageView
+                android:layout_width="@dimen/dots_menu_icon"
+                android:layout_height="@dimen/dots_menu_icon"
+                android:layout_gravity="center"
+                android:background="@mipmap/dots_vert" />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/malibu"
+            android:indeterminateTintMode="src_in"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/date_label_bg_transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cpb_white"
+                    android:textSize="10sp"
+                    tools:text="Test text" />
+
+                <ImageView
+                    android:id="@+id/img_seen"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="1dp"
+                    android:tint="@android:color/white" />
+
+            </LinearLayout>
+
+            <Space
+                android:id="@+id/status_space"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+include ':app'
+include ':backend'
+project(':backend').projectDir = new File('../../missito-backend/javaServer')
+include ':common'
+project(':common').projectDir = new File('../../missito-backend/common')
+include ':LoadTest'
+project(':LoadTest').projectDir = new File('../../missito-backend/LoadTesting')

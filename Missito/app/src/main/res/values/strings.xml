@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">Missito</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_enter_phone">Enter phone</string>
+    <string name="bad_dialing_code">Bad dialing code</string>
+    <string name="dummy_enter_code">Enter code</string>
+    <string name="verification">Verification</string>
+    <string name="code">code</string>
+    <string name="i_didn_t_received">Didn\'t get the code?</string>
+    <string name="done">Done</string>
+    <string name="all">All</string>
+    <string name="missito">Missito</string>
+    <string name="last_seen">Last seen %s</string>
+    <string name="invite">Invite</string>
+    <string name="the_worlds_awesome_app">The world\'s awesome messaging app.</string>
+    <string name="gt_bracket"><![CDATA[>]]></string>
+    <string name="incorrect_phone">Incorrect phone number</string>
+    <string name="select_country">Select Country</string>
+    <string name="contacts">Contacts</string>
+    <string name="chats">Chats</string>
+    <string name="active_time">active %s</string>
+    <string name="welcome">Welcome</string>
+    <string name="time_format" formatted="false">%02d:%02d</string>
+    <string name="time_zero">00:00</string>
+    <string name="new_message">New message</string>
+    <string name="cant_contact_auth">Can\'t contact authentication server</string>
+    <string name="unknown_error">Unknown error. Code: %d</string>
+    <string name="logout">Logout</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="blocked">Blocked</string>
+    <string name="block_unblock">Block/Unblock</string>
+    <string name="privacy_label">Privacy</string>
+    <string name="show_online_status">Show \'Online\' Status</string>
+    <string name="send_seen_status">Send \'Seen\' Status</string>
+    <string name="show_online_status_description">You can change this settings once every 24 hours</string>
+    <string name="send_seen_status_description">Turning this setting off will hide others \'Seen\' status senderUid you</string>
+    <string name="close">Close</string>
+    <string name="unable_to_send_privacy_settings">Unable to send privacy settings to server</string>
+    <string name="no_audio_record_apps">You have no apps that can record sound</string>
+    <string name="camera_shot">Camera shot</string>
+    <string name="gallery_image">Gallery image</string>
+    <string name="location">Location</string>
+    <string name="location_select_error">Could not open location select screen</string>
+    <string name="upload_failed">Failed to upload %s</string>
+    <string name="no_permission_to_read_storage">No permission to read senderUid storage</string>
+    <string name="no_camera_permission">No permission to use camera</string>
+    <string name="image_select_or_video">Select an image or video</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="send_email">Send email</string>
+    <string name="is_typing">%s is typing&#8230;</string>
+    <string name="format_last_seen">at %s</string>
+    <string name="record_audio">Record audio</string>
+    <string name="new_label">New</string>
+    <string name="add_contact">Add contact</string>
+    <string name="later">Later</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="invitations_send">Invitations were sent</string>
+    <string name="coudl_not_send_invites">Could not send invites. Try again?</string>
+    <string name="settings">Settings</string>
+    <string name="please_confirm_your_country_code_and_enter_your_phone_number">Please confirm your country code and enter your phone number.</string>
+    <string name="confirm_btn">Continue</string>
+    <string name="by_signing_up_you_agree_to_our_terms_of_service_and_privacy_policy">By signing up, you agree to our <a href='http://www.google.com'> Terms of Service</a> and <a href='http://www.google.com'>Privacy Policy </a></string>
+    <string name="account_setup">Account setup</string>
+    <string name="could_not_find_country">Could not find any country</string>
+    <string name="resend_code">Resend code</string>
+    <string name="send_code">Enter the verification code we have sent to %s</string>
+    <string name="resend_sms">Request code in %s</string>
+    <string name="wrong_code">Wrong verification code</string>
+    <string name="blocked_label">BLOCKED</string>
+    <string name="last_seen_label">Last seen: %s</string>
+    <string name="just_now">Just now</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="typing">&#8230;Typing</string>
+    <string name="shared_audio">Shared an audio</string>
+    <string name="shared_location">Shared a location</string>
+    <string name="shared_image">Shared a photo</string>
+    <string name="shared_video">Shared a video</string>
+    <string name="shared_contact">Shared a contact</string>
+    <string name="send">Send</string>
+    <string name="forward_to">Forward to...</string>
+    <string name="profile">Profile</string>
+    <string name="emails">Emails:</string>
+    <string name="numbers">Numbers:</string>
+    <string name="save">Save</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="choose_email_client">Choose an Email client:</string>
+    <string name="build_info">Build info</string>
+    <string name="mqtt_connected">Connected</string>
+    <string name="mqtt_disconnected">Disconnected</string>
+    <string name="app_version" formatted="false">Missito v%s (%d)</string>
+    <string name="app_url" formatted="false">App URL: %s</string>
+    <string name="mqtt_host" formatted="false">MQTT host: %s</string>
+    <string name="mqtt_login" formatted="false">MQTT login: %s</string>
+    <string name="mqtt_client_id" formatted="false">MQTT clientId: %s</string>
+    <string name="mqtt_connection_state" formatted="false">MQTT connection state: %s</string>
+    <string name="notifications_label">Notifications</string>
+    <string name="account_label">Account</string>
+    <string name="people_label">People</string>
+    <string name="help_label">Help</string>
+    <string name="about_label">About</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="shared_media_label">Shared Media</string>
+    <string name="mute_label">Mute</string>
+    <string name="block_user_label">Block User</string>
+    <string name="clear_history_label">Clear History</string>
+    <string name="to_call">Call</string>
+    <string name="to_chat">Chat</string>
+    <string name="unblock_user_label">Unblock user</string>
+    <string name="contact_info">Contact info</string>
+    <string name="no_phone_call_permission">No permission to call</string>
+    <string name="no_video_record_apps">No video recording applications</string>
+    <string name="select_video">Select video</string>
+    <string name="invite_your_friends">Invite your friends and start chatting!</string>
+    <string name="too_short_number">The phone number you entered is too short for %s</string>
+    <string name="too_long_number">The phone number you entered is too long for %s</string>
+    <string name="ok">ok</string>
+    <string name="failed_encrypt_audio">Failed to encrypt audio</string>
+    <string name="image_is_loading">Image is loading, please wait.</string>
+    <string name="failed_download_image">Failed to download image</string>
+    <string name="failed_decrypt_image">Failed to decrypt image</string>
+    <string name="failed_decrypt_audio">Failed to decrypt audio</string>
+    <string name="failed_decrypt_video">Failed to decrypt video</string>
+    <string name="failed_encrypt_image">Failed to encrypt image</string>
+    <string name="failed_encrypt_video">Failed to encrypt video</string>
+    <string name="copy">Copy</string>
+    <string name="forward">Forward</string>
+    <string name="delete">Delete</string>
+    <string name="message">Message</string>
+    <string name="clipboard">Saved to clipboard</string>
+    <string name="not_implemented">Not implemented</string>
+    <string name="downloading_attachments">Downloading attachments, please wait!</string>
+    <string name="share">Share</string>
+    <string name="save_gallery">Save to gallery</string>
+    <string name="saved_gallery">Saved to gallery</string>
+    <string name="saving_gallery">Saving to gallery</string>
+    <string name="video_is_already_downloaded">Video is already downloaded</string>
+    <string name="share_via">Share via</string>
+    <string name="image_message">Image</string>
+    <string name="video_message">Video</string>
+    <string name="tap_for_photo_hold_for_video">Tap for photo, hold for video</string>
+    <string name="no_permission_record_audio">No permission to record audio</string>
+    <string name="failed_to_save_photo">Failed to save photo</string>
+    <string name="copied">Copied</string>
+    <string name="contact_message">Contact</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="alert_something_went_wrong">Something went wrong, we couldn\'t get your profile settings.</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="missito_user">Missito User</string>
+    <string name="user_switched_to_device">\nUser switched to a new device</string>
+    <string name="connection_info">Connection info</string>
+    <string name="youll_be_able_change_setting">You\'ll be able to change this preference in %s</string>
+    <string name="hint_below_input_name">Please enter your name so we know how to address you.</string>
+    <string name="input_your_name">Input your name</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="invite_all_by_sms">Invite all by SMS</string>
+    <string name="last_hour">for the last hour</string>
+    <string name="last_day">for last 24 hours</string>
+    <string name="from_beginning">from the beginning</string>
+    <string name="clean_history_dialog_title">Clean history:</string>
+    <string name="clean">clean</string>
+
+    <plurals name="n_min">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <plurals name="n_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+
+    <plurals name="invite_n_users">
+        <item quantity="one">invite</item>
+        <item quantity="other">invite %d users</item>
+    </plurals>
+
+    <plurals name="forward_to_n_users">
+        <item quantity="one">forward</item>
+        <item quantity="other">forward to %d users</item>
+    </plurals>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:id="@+id/contact_itemTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:textSize="18sp"
+        tools:text="mail@gmail.com"/>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_below="@+id/contact_itemTv"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:background="@color/lightGrey"/>
+</RelativeLayout>

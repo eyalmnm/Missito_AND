@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bonJour"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/profile_grey_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="24dp" />
+
+        <include layout="@layout/profile_grey_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cpb_white"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="23dp"
+            android:paddingTop="14dp">
+
+            <FrameLayout
+                android:id="@+id/profileAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/contact_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_border_color="@color/gallery"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="30dp" />
+
+                <TextView
+                    android:id="@+id/initials_txt"
+                    fontPath="fonts/vagrundschriftdot-regular.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="1"
+                    android:shadowColor="@color/black10"
+                    android:shadowDx="0"
+                    android:shadowDy="4"
+                    android:shadowRadius="8"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    tools:text="A" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:minHeight="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contact_name"
+                        fontPath="fonts/sf-ui-display-regular.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/tundora"
+                        android:textSize="19sp"
+                        tools:text="Freddy Mascot" />
+
+                    <TextView
+                        android:id="@+id/contact_status"
+                        fontPath="fonts/sf-ui-display-light.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/manatee"
+                        android:textSize="16sp"
+                        tools:text="Never seen before" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to_chat_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_chat"
+                        android:tint="@color/dodgerBlue" />
+
+                    <TextView
+                        fontPath="fonts/sf-ui-display-light.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_chat"
+                        android:textColor="@color/dodgerBlue"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cpb_white"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="18dp">
+
+            <include
+                layout="@layout/profile_grey_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:minHeight="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/phone_number_type"
+                        fontPath="fonts/sf-ui-display-light.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dodgerBlue"
+                        android:textSize="16sp"
+                        tools:text="mobile" />
+
+                    <TextView
+                        android:id="@+id/contact_phone"
+                        fontPath="fonts/sf-ui-display-light.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tundora"
+                        android:textSize="19sp"
+                        tools:text="+44 57 874 8755" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to_call_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_call"
+                        android:tint="@color/dodgerBlue" />
+
+                    <TextView
+                        fontPath="fonts/sf-ui-display-light.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_call"
+                        android:textColor="@color/dodgerBlue"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/profile_grey_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="24dp" />
+
+        <include layout="@layout/profile_grey_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cpb_white"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="13dp">
+
+            <LinearLayout
+                android:id="@+id/shared_media_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/shared_media_label"
+                    android:textColor="@color/tundora"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/shared_media_count"
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/blue_rounded_rect"
+                    android:gravity="center"
+                    android:minWidth="24dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/cpb_white"
+                    tools:text="25" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    app:srcCompat="@drawable/ic_arrow_right"
+                    android:tint="@color/lightGrey" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/profile_grey_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="21dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/mute_user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="4dp"
+                android:gravity="center_vertical">
+
+                <Switch
+                    android:id="@+id/mute_switch"
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="bottom"
+                    android:text="@string/mute_label"
+                    android:textColor="@color/tundora"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/profile_grey_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="21dp" />
+
+            <LinearLayout
+                android:id="@+id/clear_history_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/clear_history_label"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/profile_grey_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="21dp" />
+
+            <LinearLayout
+                android:id="@+id/block_user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/blocked_label"
+                    fontPath="fonts/sf-ui-display-light.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/block_user_label"
+                    android:textColor="@color/crimson"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/profile_grey_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/message_right_margin"
+    android:gravity="right"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin"
+        android:background="@drawable/text_message_bg_color_dodger_blue"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/contact_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="24dip"
+            app:riv_mutate_background="true" />
+
+        <LinearLayout
+            android:id="@+id/contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/contact_image"
+            android:orientation="vertical"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="156dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="Pripa Marcu" />
+
+            <TextView
+                android:id="@+id/phones"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="156dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="+37367360869" />
+
+            <TextView
+                android:id="@+id/emails"
+                fontPath="fonts/sf-ui-display-light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="156dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="user@redriverapps.net" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_txt"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_info"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/status_img_layout"
+            android:textColor="@color/cpb_white"
+            android:textSize="@dimen/msg_time_label_size"
+            tools:text="Test text" />
+
+        <FrameLayout
+            android:id="@+id/status_img_layout"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/contact_info"
+            android:layout_below="@+id/contact_info"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/img_seen"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:tint="@android:color/white"
+                android:visibility="invisible" />
+
+            <Space
+                android:id="@+id/status_space"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dots_menu"
+        android:layout_width="@dimen/dots_menu_layout_width"
+        android:layout_height="@dimen/dots_menu_layout_height"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:layout_width="@dimen/dots_menu_icon"
+            android:layout_height="@dimen/dots_menu_icon"
+            android:layout_gravity="center"
+            android:background="@mipmap/dots_vert" />
+    </FrameLayout>
+</FrameLayout>

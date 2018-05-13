@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profileAvatar"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:riv_border_color="@color/gallery"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profileAvatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            fontPath="fonts/sf-ui-display-regular.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/tundora"
+            android:textSize="17sp"
+            tools:text="Freddy Mascot" />
+
+        <TextView
+            android:id="@+id/phone"
+            fontPath="fonts/sf-ui-display-light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/manatee"
+            android:textSize="14sp"
+            tools:text="+44 57 874 8755" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/ic_info"
+        android:tint="@color/colorPrimary" />
+
+</RelativeLayout>

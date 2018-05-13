@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <include layout="@layout/incoming_message_avatar" />
+
+    <include
+        layout="@layout/incoming_audio_player_layout"
+        android:layout_width="240dp"
+        android:layout_marginBottom="@dimen/chat_cell_bottom_margin"
+        android:layout_marginTop="@dimen/chat_cell_top_margin"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
